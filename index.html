@@ -22,19 +22,47 @@
             <p>Sign up <span>now</span> to get started.</p>
             <p>You <span>know</span> you want to.</p>
         </div>
-        <div class="form">
+        <div class="form-fields">
             <form action="" method="post">
                 <p>
                     Let's do this!
                 </p>
-                <div>
-                    <label for="">First name</label>
-                    <label for="">Last name</label>
-                    <label for="">Email</label>
-                    <label for="">Phone number</label>
-                    <label for="">Password</label>
-                    <label for="">Confirm password</label>
+                <div class="input-controls">
+                    <div class="row">
+                        <label for="first_name">
+                            First name
+                            <input type="text" name="first_name" id="first_name">
+                        </label>
+                        <label for="last_name">
+                            Last name
+                            <input type="text" name="last_name" id="last_name">
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label for="email">
+                            Email
+                            <input type="email" name="email" id="email">
+                        </label>
+                        <label for="phone_number">
+                            Phone number
+                            <input type="number" name="phone_number" id="phone_number">
+                        </label>
+                    </div>
+                    <div class="row">
+                        <label for="password">
+                            Password
+                            <input type="password" name="password" id="password">
+                        </label>
+                        <label for="repeat_password">
+                            Confirm password
+                            <input type="password" name="repeat_password" id="repeat_password">
+                        </label>
+                    </div>  
                 </div>
+                <section>
+                    <button type="submit">Create account</button>
+                    <p>Already have an account? <a href="">Log in</a></p>
+                </section> 
             </form>
         </div>
     </div>

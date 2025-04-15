@@ -119,7 +119,7 @@ a:hover {
   }
 }
 
-.form {
+.form-fields {
   flex-grow: 2.5;
   margin-bottom: 10rem;
   background-color: ghostwhite;
@@ -127,10 +127,23 @@ a:hover {
   font-size: 2rem;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
 form > * {
   border: 1px solid black;
 }
 
-form > div > * {
+.input-controls {
+  flex-direction: column;
+}
+
+.input-controls > *{
   border: 1px solid black;
+  > * {
+    border: 1px solid black;
+  }
 }
