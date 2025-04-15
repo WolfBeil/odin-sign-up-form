@@ -130,3 +130,7 @@ a:hover {
 form > * {
   border: 1px solid black;
 }
+
+form > div > * {
+  border: 1px solid black;
+}
