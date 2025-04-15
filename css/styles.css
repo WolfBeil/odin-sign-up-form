@@ -1,3 +1,5 @@
+/* Mordern-normalize styles  */
+
 @import '../node_modules/modern-normalize/modern-normalize.css';
 
 :root {
@@ -21,4 +23,39 @@ h1, h2, h3, h4, h5 {
 img {
   display: block;
   max-inline-size: 100%;
+}
+
+/* My custom styles */
+
+body {
+  display: flex;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+div {
+  border: 2px solid black;
+  display: flex;
+  flex: 1;
+}
+
+.bg-img {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  margin-top: 25%;
+  flex: 0;
+  min-height: 10rem;
+}
+
+.img-footer {
+  min-height: 2rem;
+  margin-bottom: 1rem;
+  flex-grow: 0;
+}
+
+.form-div {
+  flex-grow: 2;
 }
