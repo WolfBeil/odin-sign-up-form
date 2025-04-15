@@ -58,4 +58,11 @@ div {
 
 .form-div {
   flex-grow: 2;
+  flex-direction: column;
+  background-color: aliceblue;
+}
+
+.form {
+  flex-grow: 2;
+  margin-bottom: 10rem;
 }
