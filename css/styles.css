@@ -27,6 +27,14 @@ img {
 
 /* My custom styles */
 
+@font-face {
+  font-family: 'belligerent';
+  src: url('../fonts/belligerent-webfont.woff2') format('woff2'),
+       url('../fonts/belligerent-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   display: flex;
   justify-content: space-evenly;
@@ -37,6 +45,21 @@ div {
   border: 2px solid black;
   display: flex;
   flex: 1;
+}
+
+a {
+  color: inherit;
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+a:visited {
+  color: inherit;
+}
+
+a:hover {
+  background-color: #3e4770;
+  border-radius: 5px;
+  color: inherit;
 }
 
 /* Background Image styles */
@@ -52,16 +75,35 @@ div {
   margin-top: 25%;
   flex: 0;
   min-height: 10rem;
+  background-color: #3e477099;
+  justify-content: center;
+  gap: 2rem;
+  font-family: 'belligerent';
+  font-size: 5rem;
+  font-weight: 700;
+  color: ghostwhite;
+  >h1 {
+    align-self: center;
+  }
 }
 
 .img-footer {
+  justify-content: center;
   min-height: 2rem;
   margin-bottom: 1rem;
   flex-grow: 0;
   border-color: red;
+  color: ghostwhite;
 }
 
 /* Form styles */
+
+.form-div {
+  flex-grow: 2;
+  flex-direction: column;
+  background-color: #3e4770E6;
+  color: ghostwhite;
+}
 
 .legend {
   flex-direction: column;
@@ -75,13 +117,6 @@ div {
   >h2 {
     margin-top: 2.5rem;
   }
-}
-
-.form-div {
-  flex-grow: 2;
-  flex-direction: column;
-  background-color: #3e4770;
-  color: ghostwhite
 }
 
 .form {
