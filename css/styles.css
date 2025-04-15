@@ -87,4 +87,11 @@ div {
 .form {
   flex-grow: 2.5;
   margin-bottom: 10rem;
+  background-color: ghostwhite;
+  color: #3e4770;
+  font-size: 2rem;
+}
+
+form > * {
+  border: 1px solid black;
 }
