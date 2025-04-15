@@ -39,9 +39,13 @@ div {
   flex: 1;
 }
 
+/* Background Image styles */
+
 .bg-img {
   flex-direction: column;
   justify-content: space-between;
+  background-image: url('../img/Lake.jpg');
+  background-size: cover;
 }
 
 .logo {
@@ -54,15 +58,33 @@ div {
   min-height: 2rem;
   margin-bottom: 1rem;
   flex-grow: 0;
+  border-color: red;
+}
+
+/* Form styles */
+
+.legend {
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  padding-left: 2rem;
+  >p>span {
+    font-style: italic;
+  }
+  >h2 {
+    margin-top: 2.5rem;
+  }
 }
 
 .form-div {
   flex-grow: 2;
   flex-direction: column;
-  background-color: aliceblue;
+  background-color: #3e4770;
+  color: ghostwhite
 }
 
 .form {
-  flex-grow: 2;
+  flex-grow: 2.5;
   margin-bottom: 10rem;
 }
